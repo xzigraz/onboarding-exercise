@@ -1,0 +1,25 @@
+@import "./ui-component/scss/utility.imports";
+
+.onboarding-page {
+	.td-input-container {
+		position: relative;
+		margin: {
+			bottom: rem(10);
+		}
+		input {
+			border: {
+				radius: rem(6);
+			}
+		}
+		label {
+			position: absolute;
+			top: calc(50% - 6px);
+			left: rem(15);
+			font: {
+				weight: 400;
+				size: rem(12);
+			}
+			color: gray;
+		}
+	}
+}

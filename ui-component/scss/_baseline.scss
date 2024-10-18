@@ -1,0 +1,22 @@
+@import "./_utility.imports.scss";
+
+* {
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: {
+		top: 0;
+	}
+}
+
+.mb-40 {
+	margin: {
+		bottom: rem(40p);
+	}
+}

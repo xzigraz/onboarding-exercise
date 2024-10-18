@@ -1,0 +1,16 @@
+@import "../ui-component/scss/utility.imports";
+
+.onboarding-page {
+	// mobile
+	@include breakpoint(max-width $breakpointsMobile) {
+		
+	}
+	// tablet
+	@include breakpoint($breakpointsTablet) {
+		
+	}
+	// desktop
+	@include breakpoint(min-width $breakpointsDesktop) {
+
+	}
+}
