@@ -7,7 +7,7 @@ import "./_onboarding.page.scss";
 export interface Address {
 	id: string | null,
 	address1: string
-	address2?: string | undefined
+	address2?: string | null
 	city: string
 	state: string
 	stateCode: string
@@ -49,7 +49,7 @@ async function getData() {
 		address: {
 			id: null,
 			address1: "",
-			address2: undefined,
+			address2: "",
 			city: "",
 			state: "",
 			stateCode: "",
