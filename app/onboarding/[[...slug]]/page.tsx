@@ -7,7 +7,7 @@ import "./_onboarding.page.scss";
 export interface Address {
 	id: string | null,
 	address1: string
-	address2?: string | null
+	address2?: string
 	city: string
 	state: string
 	stateCode: string
