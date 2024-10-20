@@ -1,0 +1,38 @@
+
+@import "./ui-component/scss/utility.imports";
+@import "../../assets/scss/variables";
+
+.progress-bar-container {
+	.content-wrapper {
+		display: flex;
+		justify-content: space-around;
+	}
+	a, span {
+		display: flex;
+		justify-content: center;
+		flex: 1;
+		color: #ccc;
+	}
+	a {
+		position: relative;
+		text-decoration: none;
+		&.active {
+			color: $primaryColor;
+		}
+		&:not(:first-of-type) {
+			&.active {
+				&::before {
+					position: absolute;
+					content: "";
+					right: calc(50% + 49px);
+					width: calc(100% - 49px - 49px);
+					height: 1px;
+					top: calc(50% - 1px);
+					background: {
+						color: $primaryColor;
+					}
+				}
+			}
+		}
+	}
+}

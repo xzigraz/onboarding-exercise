@@ -1,6 +1,17 @@
 @import "../ui-component/scss/utility.imports";
 
-.onboarding-page {
+.homepage {
+	.td-section-layout {
+		margin: unset;
+		padding: unset;
+	}
+	.content-wrapper {
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 	// mobile
 	@include breakpoint(max-width $breakpointsMobile) {
 		

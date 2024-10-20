@@ -1,2 +1,16 @@
-
 @import "./ui-component/scss/utility.imports";
+@import "./ui-component/scss/button";
+@import "./variables";
+
+* {
+	box-sizing: border-box;
+}
+
+.td-button {
+	border-radius: rem(6);
+	background: {
+		color: $primaryColor;
+	}
+	box-shadow: none;
+	color: #fff;
+}

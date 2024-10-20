@@ -5,7 +5,7 @@ export type InputChangeEvent<T = any> = {
 		name: string
 		value: T
 	}
-} & Pick<React.BaseSyntheticEvent<HTMLInputElement>, 'stopPropagation'>;
+};
 
 export const getInputChangeData = (e: InputChangeEvent): {[key: string]: any} => {
 	const key = e.target.name;

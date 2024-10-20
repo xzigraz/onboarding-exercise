@@ -1,17 +1,53 @@
 @import "./ui-component/scss/utility.imports";
 
 .onboarding-page {
+	.actions-container {
+		display: flex;
+		margin: {
+			top: rem(10);
+		}
+		.td-button {
+			margin: {
+				left: auto;
+			}
+		}
+	}
 	.td-input-container {
 		position: relative;
 		margin: {
 			bottom: rem(10);
 		}
+		background: {
+			color: #fff;
+		}
+		border: {
+			radius: rem(6);
+		}
 		input {
+			z-index: 1;
 			border: {
 				radius: rem(6);
 			}
+			height: rem(65);
+			background: {
+				color: transparent;
+			}
+			&:not([value=""]),
+			&:placeholder-shown,
+			&:focus {
+				padding: {
+					top: rem(20);
+				}
+				+ label {
+					top: rem(10);
+					font: {
+						size: rem(10);
+					}
+				}
+			}
 		}
 		label {
+			z-index: 0;
 			position: absolute;
 			top: calc(50% - 6px);
 			left: rem(15);
@@ -20,6 +56,12 @@
 				size: rem(12);
 			}
 			color: gray;
+			transition: font-size 0.3s ease, top 0.3s ease;
 		}
+	}
+	.fields-equally-divided {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(1px, 1fr));
+		grid-gap: rem(10);
 	}
 }
